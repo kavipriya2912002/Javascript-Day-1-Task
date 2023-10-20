@@ -1,0 +1,16 @@
+Blog about objects and its internal representation in Javascript.
+
+1) In javascript Objects are Variable too.But objects can contain multiple values.
+2) Object may contain any combination of any primitive data-types as well as reference data-types.
+3) The values for the objects can written as name:value.
+4) There are two different ways to access the javascript objects:
+      1)objName.PropName
+      2)objName["PropName"]
+5) Property names are always strings. If you use a name which is not a string, it is implicitly converted to a string.So a JavaScript object
+ is basically a map from strings to values.
+
+CREATING OBJECTS IN JAVASCRIPT:
+1)creating javascript objects with object literal
+2)Create JavaScript Object with Constructor
+3)Using the JavaScript Keyword new.
+4)Using the Object.create method

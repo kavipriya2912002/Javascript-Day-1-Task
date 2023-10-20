@@ -1,0 +1,24 @@
+Blog on difference between HTTP1.1 and HTTP 2.
+
+HTTP helps the user to send the request to the server and receive the response from the server.
+
+HTTP1.1 :
+1} HTTP1.1 was created to the web pages containing some html markup and an image or two. But now a days web pages contains 
+hundreds of resources with image,fonts,web style sheets etc.
+2} HTTP1.1 was not designed to endow such big loads like many images and other resources.It'll take more time to load the page.
+3) HTTP1.1 transfers all the requests and response in the plain text format.
+4) HTTP1.1 is slow when compared to HTTP2.
+5) HTTP1.1 loads all the resources one by one, if any resource is not loaded it blocks all the remaining resources.
+6) HTTP1.1 doesn't use any method like HPACK to compress the header to improve performance so it'll take more time to load
+ when compared to HTTP2.
+
+
+HTTP2 :
+1) HTTP2 is faster and efficient when compared to HTTP1.1.
+2) One of the reason behind HTTP2 being faster is prioritizing contents during the loading process.It compresses the HTTP headers and 
+allows for several push which can send resources to the browser before the HTML document is even completely parsed.
+3) HTTP2 uses a single TCP connection to send multiple data in a single time and it is called multiplexing.
+4) HTTP2 transfers all the data in binary format.
+5) To speed up the loading process by making it small both the HTTP1.1 and HTTP2 uses the compression method. firstly it compresses the header
+ to make it small to improve the performance.For this HTTP2 uses the most advanced compression method called HPACK so that it'll take less time 
+ to load the page.
